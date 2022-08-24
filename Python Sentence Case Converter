@@ -1,0 +1,25 @@
+def sentencecase(text):
+    excludedwords = ["of", "or", "for", "a", "are", "the"]
+    newsentence = ""
+    print("Input sentence:", text)
+
+    text = text.lower()
+    print(text)
+    print("")
+
+    for word in text.split():
+
+        if word in excludedwords:
+            word = word.lower()
+            newsentence = newsentence + " " +word
+
+        else:
+            word = word.title()
+            newsentence = newsentence + " " + word
+
+    print("The final sentence is:")
+    print(newsentence)
+
+########
+sentencecase("Insert Text Here for Sentence Case")
+########
