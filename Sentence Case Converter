@@ -4,7 +4,7 @@ def sentencecase(text):
     print("Input sentence:", text)
 
     text = text.lower()
-    print(text)
+  
     print("")
 
     for word in text.split():
